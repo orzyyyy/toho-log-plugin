@@ -1,0 +1,19 @@
+{
+  "name": "toho-log-plugin",
+  "version": "1.0.0",
+  "description": "A plugin of webpack, interested the output of the terninel, just for fun.",
+  "main": "index.js",
+  "scripts": {
+    "push": "git add .&& git commit -m \"update\" && git push"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zy410419243/toho-log-plugin.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zy410419243/toho-log-plugin/issues"
+  },
+  "homepage": "https://github.com/zy410419243/toho-log-plugin#readme"
+}
