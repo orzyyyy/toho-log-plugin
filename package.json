@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/zy410419243/toho-log-plugin/issues"
   },
-  "homepage": "https://github.com/zy410419243/toho-log-plugin#readme"
+  "homepage": "https://github.com/zy410419243/toho-log-plugin#readme",
+  "devDependencies": {
+    "chalk": "^2.4.1"
+  }
 }
