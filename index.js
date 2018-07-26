@@ -2,7 +2,7 @@
  * @Author: zy9@github.com/zy410419243 
  * @Date: 2018-06-17 21:44:44 
  * @Last Modified by: zy9
- * @Last Modified time: 2018-06-20 15:25:47
+ * @Last Modified time: 2018-07-26 15:35:51
  */
 const { log, error, warn, info, logInfo } = require('./log');
 
@@ -13,7 +13,7 @@ class TohoLogPlugin {
 
     /* 编不出好玩的故事，这些hooks只能搁浅了... */
     apply(compiler) {
-        const { dev } = this.options;
+        const { dev = true } = this.options;
 
         compiler.hooks.entryOption.tap('log', () => {
             
