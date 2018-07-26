@@ -2,7 +2,7 @@
  * @Author: zy9@github.com/zy410419243 
  * @Date: 2018-06-18 13:43:52 
  * @Last Modified by: zy9
- * @Last Modified time: 2018-06-29 16:39:22
+ * @Last Modified time: 2018-07-26 10:48:28
  */
 const chalk = require('chalk');
 
@@ -42,17 +42,27 @@ const logInfo = (err, stats, dev) => {
         }
 
         if(!dev) {
-            warn('\n  虽然有些烦恼，但少女还是去和风车战斗了 ╮(╯_╰)╭\n');
+            warn('\n  虽然有些烦恼，但少女还是去和风车战斗了\n');
 
-            log('  铁血的热血的冷血的可笑的可悲的可爱的可敬的少女死去了，但好像又活了过来\n');
-            
-            info('  然后少女去寻找自己的诗和苟且了 ╮(╯_╰)╭\n');
+            logForProd()
 
             return;
         }
     }
 
-    log(`♪(^∇^*)♪(^∇^*)♪(^∇^*) 少女第${ ++successCount }次捡到钱了 ♪(^∇^*)♪(^∇^*)♪(^∇^*)`);
+    if(!dev) {
+        logForProd();
+    } else {
+        log(`♪(^∇^*)♪(^∇^*)♪(^∇^*) 少女第${ ++successCount }次捡到钱了 ♪(^∇^*)♪(^∇^*)♪(^∇^*)`);
+    }
+}
+
+const logForProd = () => {
+    log('\n  少女抬首，风车空转。影动风移，浮沉氤氲。若一去不回，便一去不回罢\n');
+
+    log('  铁血的热血的冷血的可笑的可悲的可爱的可敬的少女死去了，但好像又活了过来\n');
+        
+    info('  然后少女去寻找自己的诗和苟且了 ╮(╯_╰)╭\n');
 }
 
 module.exports = { log, error, warn, info, logInfo };
