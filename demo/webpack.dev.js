@@ -2,11 +2,10 @@
  * @Author: zy9@github.com/zy410419243
  * @Date: 2018-05-20 13:48:08
  * @Last Modified by: zy9
- * @Last Modified time: 2018-11-11 21:38:52
+ * @Last Modified time: 2018-11-11 23:21:11
  */
 const webpack = require('webpack');
 const webpackDevServer = require('webpack-dev-server');
-const path = require('path');
 const { commonModule, commonPlugin } = require('./webpack.common');
 const TohoLogPlugin = require('..');
 
