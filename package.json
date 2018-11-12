@@ -1,6 +1,6 @@
 {
   "name": "toho-log-plugin",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A plugin of webpack, interested the output of the terninel, just for fun.",
   "main": "index.js",
   "scripts": {},
@@ -15,6 +15,8 @@
   },
   "homepage": "https://github.com/zy410419243/toho-log-plugin#readme",
   "devDependencies": {
-    "chalk": "^2.4.1"
+    "babel-eslint": "^10.0.1",
+    "chalk": "^2.4.1",
+    "eslint": "^5.9.0"
   }
 }

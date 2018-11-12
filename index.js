@@ -1,46 +1,51 @@
 /*
- * @Author: zy9@github.com/zy410419243 
- * @Date: 2018-06-17 21:44:44 
+ * @Author: zy9@github.com/zy410419243
+ * @Date: 2018-06-17 21:44:44
  * @Last Modified by: zy9
- * @Last Modified time: 2018-11-11 23:08:02
+ * @Last Modified time: 2018-11-12 08:25:49
  */
 const { log, error, warn, info, logInfo } = require('./log');
 let words;
 
 class TohoLogPlugin {
-    constructor(options) {
-        this.options = Object.assign({}, { dev: true, path: './word/2017CET6.json' }, options);
-    }
+	constructor (options) {
+		this.options = Object.assign({}, { dev: true, defaultWords: false }, options);
 
-    apply(compiler) {
-        const { dev } = this.options;
-        const tap = 'log';
+		if(this.options.path === undefined) {
+			this.options.path = './word/2017CET6.json';
+		}
+	}
 
-        const superInfo = () => {
-            info('  少女祈祷中...');
-        }
+	apply (compiler) {
+		const { dev } = this.options;
+		const tap = 'log';
 
-        compiler.hooks.entryOption.tap(tap, () => {
-            const { path } = this.options;
-            words = require(path);
-        });
+		const superInfo = () => {
+			info('  少女祈祷中...');
+		};
 
-        compiler.hooks.watchRun.tap(tap, () => {
-            superInfo();
-        });
+		compiler.hooks.entryOption.tap(tap, () => {
+			const { path } = this.options;
 
-        compiler.hooks.run.tap(tap, () => {
-            superInfo();
-        });
+			words = require(path);
+		});
 
-        compiler.hooks.failed.tap(tap, err => {
-            logInfo(err, undefined, dev);
-        })
+		compiler.hooks.watchRun.tap(tap, () => {
+			superInfo();
+		});
 
-        compiler.hooks.done.tap(tap, stats => {
-            logInfo(undefined, stats, dev, words);
-        });
-    }
+		compiler.hooks.run.tap(tap, () => {
+			superInfo();
+		});
+
+		compiler.hooks.failed.tap(tap, err => {
+			logInfo(err, undefined, dev);
+		});
+
+		compiler.hooks.done.tap(tap, stats => {
+			logInfo(undefined, stats, dev, words);
+		});
+	}
 }
 
 module.exports = TohoLogPlugin;
