@@ -2,7 +2,7 @@
  * @Author: zy9@github.com/zy410419243
  * @Date: 2018-05-20 13:48:08
  * @Last Modified by: zy9
- * @Last Modified time: 2018-11-11 23:21:11
+ * @Last Modified time: 2018-11-12 08:35:19
  */
 const webpack = require('webpack');
 const webpackDevServer = require('webpack-dev-server');
@@ -13,7 +13,9 @@ let plugins = commonPlugin;
 
 plugins.push(new webpack.HotModuleReplacementPlugin());
 plugins.push(new webpack.NamedModulesPlugin());
-plugins.push(new TohoLogPlugin());
+plugins.push(new TohoLogPlugin({ path: __dirname + '/word/2017CET6-test.json' }));
+// plugins.push(new TohoLogPlugin({ defaultWords: true }));
+// plugins.push(new TohoLogPlugin());
 
 const devServerOptions = {
 	port: 9099,

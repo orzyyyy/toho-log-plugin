@@ -2,18 +2,20 @@
  * @Author: zy9@github.com/zy410419243
  * @Date: 2018-06-17 21:44:44
  * @Last Modified by: zy9
- * @Last Modified time: 2018-11-12 08:25:49
+ * @Last Modified time: 2018-11-12 08:34:52
  */
 const { log, error, warn, info, logInfo } = require('./log');
-let words;
+let words = [];
 
 class TohoLogPlugin {
 	constructor (options) {
-		this.options = Object.assign({}, { dev: true, defaultWords: false }, options);
+		options = Object.assign({}, { dev: true, defaultWords: false }, options);
 
-		if(this.options.path === undefined) {
-			this.options.path = './word/2017CET6.json';
+		if(options.path === undefined && options.defaultWords) {
+			options.path = './word/2017CET6.json';
 		}
+
+		this.options = options;
 	}
 
 	apply (compiler) {
@@ -27,7 +29,13 @@ class TohoLogPlugin {
 		compiler.hooks.entryOption.tap(tap, () => {
 			const { path } = this.options;
 
-			words = require(path);
+			if(path) {
+				try {
+					words = require(path);
+				} catch (err) {
+					error('这里没显示单词大概是路径错了\r\n');
+				}
+			}
 		});
 
 		compiler.hooks.watchRun.tap(tap, () => {
