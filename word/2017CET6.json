@@ -1,18 +1,38 @@
 [
     {
-        "word": "abbreviation",
-        "mean": "n.节略，缩写，缩短"
+        "word": "permanent",
+        "mean": "adj. 永久的，持久的  n. 电烫发，烫发"
     },
     {
-        "word": "abide",
-        "mean": "vt.遵守，忍受"
+        "word": "prefix",
+        "mean": "n. 前缀  vt. 在…前加上    记忆技巧：pre 前；预先 + fix 固定 → 固定在〔单词〕前面 → 前缀"
     },
     {
-        "word": "abolish",
-        "mean": "vt.废除，取消"
+        "word": "suffix",
+        "mean": "在一个词、词根或短语的结尾出现的词缀"
     },
     {
-        "word": "absent",
-        "mean": "a.不在意的"
+        "word": "postfix",
+        "mean": "加在另一个词后面的字母、音节或词"
+    },
+    {
+        "word": "fallback",
+        "mean": "n. 可依靠的东西，退却;回降物，回退"
+    },
+    {
+        "word": "WIP",
+        "mean": "在github上见过，work in progress, do not merge yet。字面意思，正在做，别合并"
+    },
+    {
+        "word": "registry",
+        "mean": "本意为记录，放到工作流里相当于仓库，就比如cnpm或者maven"
+    },
+    {
+        "word": "maintainer",
+        "mean": "维护者"
+    },
+    {
+        "word": "as it turns out",
+        "mean": "事实证明"
     }
 ]
