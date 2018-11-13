@@ -1,6 +1,6 @@
 {
   "name": "toho-log-plugin",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "A plugin of webpack, interested the output of the terninel, just for fun.",
   "main": "index.js",
   "scripts": {},
