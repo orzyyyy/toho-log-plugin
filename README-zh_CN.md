@@ -1,4 +1,6 @@
-English | [简体中文](./README-zh_CN.md)
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+
+[English](./README.md) | 简体中文
   
 # Feature
 
@@ -29,8 +31,7 @@ English | [简体中文](./README-zh_CN.md)
 
 - 如果你用的是 webpack-dev-server, 你得设置下 `noInfo: false`, 不然你的控制台仍会输出默认编译信息
 
-
-- API  
+# API  
 
 | 名称 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |

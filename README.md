@@ -1,3 +1,5 @@
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+
 English | [简体中文](./README-zh_CN.md)
   
 # Feature
@@ -29,7 +31,7 @@ English | [简体中文](./README-zh_CN.md)
 
 ![img](./demo.gif)
 
-- API  
+# API  
 
 | name | description | type | default |
 | --- | --- | --- | --- |
