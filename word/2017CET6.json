@@ -34,5 +34,33 @@
     {
         "word": "as it turns out",
         "mean": "事实证明"
+    },
+    {
+        "word": "precise",
+        "mean": "adj. 精密;精确的;清晰的;正规的"
+    },
+    {
+        "word": "refactor",
+        "mean": "重构"
+    },
+    {
+        "word": "succinct",
+        "mean": "简练,精练"
+    },
+    {
+        "word": "capitalize",
+        "mean": "使大写"
+    },
+    {
+        "word": "prompte",
+        "mean": "提示"
+    },
+    {
+        "word": "instant feedback",
+        "mean": "瞬时反馈"
+    },
+    {
+        "word": "dig",
+        "mean": "当你提issue提问时，可以用这个表达你看了很多遍代码（但仍然看不懂...）的意思"
     }
 ]
