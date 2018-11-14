@@ -3,7 +3,9 @@
   "version": "1.0.6",
   "description": "A plugin of webpack, interested the output of the terninel, just for fun.",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "lint": "npx eslint ."
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/zy410419243/toho-log-plugin.git"
@@ -19,11 +21,15 @@
     "chalk": "^2.4.1",
     "commitizen": "^3.0.4",
     "cz-conventional-changelog": "^2.1.0",
-    "eslint": "^5.9.0"
+    "eslint": "^5.9.0",
+    "pre-commit": "^1.2.2"
   },
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
-  }
+  },
+  "pre-commit": [
+    "lint"
+  ]
 }
