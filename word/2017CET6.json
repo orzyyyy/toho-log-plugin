@@ -4,10 +4,6 @@
         "mean": "adj. 永久的，持久的  n. 电烫发，烫发"
     },
     {
-        "word": "prefix",
-        "mean": "n. 前缀  vt. 在…前加上    记忆技巧：pre 前；预先 + fix 固定 → 固定在〔单词〕前面 → 前缀"
-    },
-    {
         "word": "suffix",
         "mean": "在一个词、词根或短语的结尾出现的词缀"
     },
@@ -20,14 +16,6 @@
         "mean": "n. 可依靠的东西，退却;回降物，回退"
     },
     {
-        "word": "WIP",
-        "mean": "在github上见过，work in progress, do not merge yet。字面意思，正在做，别合并"
-    },
-    {
-        "word": "registry",
-        "mean": "本意为记录，放到工作流里相当于仓库，就比如cnpm或者maven"
-    },
-    {
         "word": "maintainer",
         "mean": "维护者"
     },
@@ -38,10 +26,6 @@
     {
         "word": "precise",
         "mean": "adj. 精密;精确的;清晰的;正规的"
-    },
-    {
-        "word": "refactor",
-        "mean": "重构"
     },
     {
         "word": "succinct",
@@ -60,7 +44,11 @@
         "mean": "瞬时反馈"
     },
     {
-        "word": "dig",
-        "mean": "当你提issue提问时，可以用这个表达你看了很多遍代码（但仍然看不懂...）的意思"
+        "word": "bump",
+        "mean": "vt. 颠簸; 碰撞，冲撞; 本意是这样，但在升级项目版本时可以写 bump 0.0.2，仅仅知道能这么用"
+    },
+    {
+        "word": "optimize",
+        "mean": "优化"
     }
 ]
