@@ -50,5 +50,21 @@
     {
         "word": "optimize",
         "mean": "优化"
+    },
+    {
+        "word": "constraint",
+        "mean": "约束"
+    },
+    {
+        "word": "assuming ",
+        "mean": "假设"
+    },
+    {
+        "word": "capture",
+        "mean": "捕获"
+    },
+    {
+        "word": "arbitrary",
+        "mean": "随意的，比如高度未定，you allowed arbitrary row heights"
     }
 ]
