@@ -2,7 +2,7 @@
  * @Author: zy9@github.com/zy410419243
  * @Date: 2018-06-17 21:44:44
  * @Last Modified by: zy9
- * @Last Modified time: 2018-11-12 08:34:52
+ * @Last Modified time: 2018-12-01 15:10:30
  */
 const { log, error, warn, info, logInfo } = require('./log');
 let words = [];
@@ -12,7 +12,7 @@ class TohoLogPlugin {
 		options = Object.assign({}, { dev: true, defaultWords: false }, options);
 
 		if(options.path === undefined && options.defaultWords) {
-			options.path = './word/2017CET6.json';
+			options.path = './word.json';
 		}
 
 		this.options = options;
