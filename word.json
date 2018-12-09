@@ -16,10 +16,6 @@
         "mean": "n. 可依靠的东西，退却;回降物，回退"
     },
     {
-        "word": "maintainer",
-        "mean": "维护者"
-    },
-    {
         "word": "as it turns out",
         "mean": "事实证明"
     },
@@ -44,10 +40,6 @@
         "mean": "瞬时反馈"
     },
     {
-        "word": "bump",
-        "mean": "vt. 颠簸; 碰撞，冲撞; 本意是这样，但在升级项目版本时可以写 bump 0.0.2，仅仅知道能这么用"
-    },
-    {
         "word": "optimize",
         "mean": "优化"
     },
@@ -56,7 +48,7 @@
         "mean": "约束"
     },
     {
-        "word": "assuming ",
+        "word": "assume",
         "mean": "假设"
     },
     {
@@ -66,5 +58,14 @@
     {
         "word": "arbitrary",
         "mean": "随意的，比如高度未定，you allowed arbitrary row heights"
+    },
+    {
+        "word": "compatibility",
+        "mean": "兼容性"
+    },
+    {
+        "word": "crucial",
+        "mean": "关键,紧要,临界"
     }
+    
 ]
