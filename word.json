@@ -44,10 +44,6 @@
         "mean": "约束"
     },
     {
-        "word": "assume",
-        "mean": "假设"
-    },
-    {
         "word": "capture",
         "mean": "捕获"
     },
@@ -70,6 +66,10 @@
     {
         "word": "pseudo-class",
         "mean": "伪类"
+    },
+    {
+        "word": "caveats",
+        "mean": "注意事项"
     }
     
 ]
