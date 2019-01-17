@@ -1,7 +1,7 @@
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
 English | [简体中文](./README-zh_CN.md)
-  
+
 # Feature
 
 - Improve output of your terninel, if you think those info is not very important too.
@@ -13,30 +13,31 @@ English | [简体中文](./README-zh_CN.md)
 # Usage
 
 - First, add `git+https://github.com/zy410419243/toho-log-plugin.git` into your `package.json`, maybe into dependencies, and install it.
-  
+
 - Then, use it as a webpack-plugin in your `webpack.config.js` as below,
 
-``` bash
+```bash
   const TohoLogPlugin = require('toho-log-plugin');
 
   module.exports = {
-    plugins: [ new TohoLogPlugin() ]
+    plugins: [ new TohoLogPlugin({ dev: true }) ]
   }
 
 ```
 
 - Finally, when you run your webpack and save your code, you can get output of your terninel like this,
-  
-- If you use it in `webpack-dev-server`, you may need to set  `noInfo: false`, or the output will console default compile info.
+
+- If you use it in `webpack-dev-server`, you may need to set `noInfo: false`, or the output will console default compile info.
 
 ![img](./demo.gif)
 
-# API  
+# API
 
-| name | description | type | default |
-| --- | --- | --- | --- |
-| dev | to distinguish whether the environment is development, it effects the output of your terninel. | Boolean | true |
-| path | if you want to custom your own word file, you can use this as `__dirname + your file path` | string | - |
-| defaultWords | there is a word list file in the plugin, about front, if you need this you can set this to `true` | Boolean | false |
-  
+| name         | description                                                                                       | type    | default |
+| ------------ | ------------------------------------------------------------------------------------------------- | ------- | ------- |
+| dev          | to distinguish whether the environment is development, it effects the output of your terninel.    | Boolean | true    |
+| path         | if you want to custom your own word file, you can use this as `__dirname + your file path`        | string  | -       |
+| defaultWords | there is a word list file in the plugin, about front, if you need this you can set this to `true` | Boolean | false   |
+| isPray       | if you are using `webpackbar`, you may need this to prevent info from `watchRun` or `run`         | Boolean | true    |
+
 The gif contains all usages of this plugin, have fun.
