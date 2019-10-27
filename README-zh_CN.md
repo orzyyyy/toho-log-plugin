@@ -14,13 +14,12 @@
 
 - 然后，这是一个 webpack 的插件，所以你需要在`webpack.config.js`里配置它，就像下面写的，
 
-```bash
-  const TohoLogPlugin = require('toho-log-plugin');
+```javascript
+import TohoLogPlugin from 'toho-log-plugin';
 
-  module.exports = {
-    plugins: [ new TohoLogPlugin({ dev: true }) ]
-  }
-
+module.exports = {
+  plugins: [new TohoLogPlugin({ dev: true })],
+};
 ```
 
 - 最后, 跑起来然后按保存的时候，你可以看到如下图所示的画面，

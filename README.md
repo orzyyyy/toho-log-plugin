@@ -14,13 +14,12 @@ English | [简体中文](./README-zh_CN.md)
 
 - Then, use it as a webpack-plugin in your `webpack.config.js` as below,
 
-```bash
-  const TohoLogPlugin = require('toho-log-plugin');
+```javascript
+import TohoLogPlugin from 'toho-log-plugin';
 
-  module.exports = {
-    plugins: [ new TohoLogPlugin({ dev: true }) ]
-  }
-
+module.exports = {
+  plugins: [new TohoLogPlugin({ dev: true })],
+};
 ```
 
 - Finally, when you run your webpack and save your code, you can get output of your terninel like this,
