@@ -1,7 +1,12 @@
 /* eslint-disable no-console */
-const chalk = require('chalk');
+import chalk from 'chalk';
 
-const log = (text, callbackData) => {
+export interface WorkProps {
+  mean: string;
+  word: string;
+}
+
+const log = (text: string, callbackData?: WorkProps[]) => {
   if (callbackData && callbackData.length != 0) {
     const random = ~~(Math.random() * callbackData.length);
     const item = callbackData[random];
@@ -10,13 +15,13 @@ const log = (text, callbackData) => {
     console.log(chalk.greenBright(text));
   }
 };
-const error = text => console.log(chalk.red(text));
-const warn = text => console.log(chalk.yellowBright(text));
-const info = text => console.log(chalk.cyanBright(text));
+const error = (text: string) => console.log(chalk.red(text));
+const warn = (text: string) => console.log(chalk.yellowBright(text));
+const info = (text: string) => console.log(chalk.cyanBright(text));
 
 let successCount = 0;
 
-const logInfo = (err, stats, dev, callbackData) => {
+const logInfo = (err: any, stats: any, isDev: boolean, callbackData?: WorkProps[]) => {
   if (err) {
     error(err.stack || err);
 
@@ -44,7 +49,7 @@ const logInfo = (err, stats, dev, callbackData) => {
       warn(item);
     }
 
-    if (!dev) {
+    if (!isDev) {
       warn('\n  虽然有些烦恼，但少女还是去和风车战斗了\n');
 
       logForProd();
@@ -53,7 +58,7 @@ const logInfo = (err, stats, dev, callbackData) => {
     }
   }
 
-  if (!dev) {
+  if (!isDev) {
     logForProd();
   } else {
     const successInfo = `♪(^∇^*)♪(^∇^*)♪(^∇^*) 少女第 ${++successCount} 次捡到钱了 ♪(^∇^*)♪(^∇^*)♪(^∇^*)`;
@@ -70,4 +75,4 @@ const logForProd = () => {
   info('  然后少女去寻找自己的诗和苟且了 ╮(╯_╰)╭\n');
 };
 
-module.exports = { log, error, warn, info, logInfo };
+export { log, error, warn, info, logInfo };

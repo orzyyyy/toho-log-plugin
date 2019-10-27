@@ -2,10 +2,11 @@
   "name": "toho-log-plugin",
   "version": "1.0.13",
   "description": "A plugin of webpack, interested the output of the terninel, just for fun.",
-  "main": "index.js",
+  "main": "./dist/index.js",
   "scripts": {
-    "lint": "npx eslint .",
-    "pub": "npm config set registry=https://registry.npmjs.org && npm publish && npm config set registry=https://registry.npm.taobao.org"
+    "lint": "eslint '**/*.ts'",
+    "pub": "npm config set registry=https://registry.npmjs.org && npm publish && npm config set registry=https://registry.npm.taobao.org",
+    "tsc": "tsc"
   },
   "repository": {
     "type": "git",

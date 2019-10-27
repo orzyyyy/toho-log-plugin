@@ -1,8 +1,11 @@
-const { error, info, logInfo } = require('./logger');
-let words = [];
+import { error, info, logInfo, WorkProps } from './logger';
+import { Compiler } from 'webpack';
+let words: WorkProps[] = [];
 
-class TohoLogPlugin {
-  constructor(options) {
+export default class TohoLogPlugin {
+  options: { path?: string; defaultWords?: boolean; dev?: boolean; isPray?: boolean };
+
+  constructor(options: { path: string | undefined; defaultWords: boolean }) {
     options = Object.assign({}, { dev: true, defaultWords: false, isPray: true }, options);
 
     if (options.path === undefined && options.defaultWords) {
@@ -12,8 +15,8 @@ class TohoLogPlugin {
     this.options = options;
   }
 
-  apply(compiler) {
-    const { dev, isPray } = this.options;
+  apply(compiler: Compiler) {
+    const { dev = true, isPray = true } = this.options;
     const tap = 'log';
 
     const superInfo = () => {
@@ -42,14 +45,12 @@ class TohoLogPlugin {
       superInfo();
     });
 
-    compiler.hooks.failed.tap(tap, err => {
+    compiler.hooks.failed.tap(tap, (err: any) => {
       logInfo(err, undefined, dev);
     });
 
-    compiler.hooks.done.tap(tap, stats => {
+    compiler.hooks.done.tap(tap, (stats: any) => {
       logInfo(undefined, stats, dev, words);
     });
   }
 }
-
-module.exports = TohoLogPlugin;
