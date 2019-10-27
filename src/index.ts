@@ -2,10 +2,17 @@ import { error, info, logInfo, WorkProps } from './logger';
 import { Compiler } from 'webpack';
 let words: WorkProps[] = [];
 
-export default class TohoLogPlugin {
-  options: { path?: string; defaultWords?: boolean; dev?: boolean; isPray?: boolean };
+export interface TohoLogPluginProps {
+  path?: string;
+  defaultWords?: boolean;
+  dev?: boolean;
+  isPray?: boolean;
+}
 
-  constructor(options: { path: string | undefined; defaultWords: boolean }) {
+export default class TohoLogPlugin {
+  options: TohoLogPluginProps;
+
+  constructor(options: TohoLogPluginProps) {
     options = Object.assign({}, { dev: true, defaultWords: false, isPray: true }, options);
 
     if (options.path === undefined && options.defaultWords) {
