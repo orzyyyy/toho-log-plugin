@@ -12,6 +12,10 @@
   },
   "license": "MIT",
   "author": "",
+  "files": [
+    "dist",
+    "word.json"
+  ],
   "main": "./dist/index.js",
   "scripts": {
     "clean": "rimraf node_modules package-lock.json dist && npm i",
