@@ -1,22 +1,12 @@
-/*
- * @Author: zy9@github.com/zy410419243
- * @Date: 2018-06-17 21:44:44
- * @Last Modified by: zy9
- * @Last Modified time: 2018-12-01 15:10:30
- */
-const { log, error, warn, info, logInfo } = require("./log");
+const { log, error, warn, info, logInfo } = require('./log');
 let words = [];
 
 class TohoLogPlugin {
   constructor(options) {
-    options = Object.assign(
-      {},
-      { dev: true, defaultWords: false, isPray: true },
-      options
-    );
+    options = Object.assign({}, { dev: true, defaultWords: false, isPray: true }, options);
 
     if (options.path === undefined && options.defaultWords) {
-      options.path = "./word.json";
+      options.path = './word.json';
     }
 
     this.options = options;
@@ -24,11 +14,11 @@ class TohoLogPlugin {
 
   apply(compiler) {
     const { dev, isPray } = this.options;
-    const tap = "log";
+    const tap = 'log';
 
     const superInfo = () => {
       if (isPray) {
-        info("  少女祈祷中...");
+        info('  少女祈祷中...');
       }
     };
 
@@ -39,7 +29,7 @@ class TohoLogPlugin {
         try {
           words = require(path);
         } catch (err) {
-          error("这里没显示单词大概是路径错了\r\n");
+          error('这里没显示单词大概是路径错了\r\n');
         }
       }
     });

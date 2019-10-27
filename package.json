@@ -9,24 +9,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zy410419243/toho-log-plugin.git"
+    "url": "git+https://github.com/orzyyyy/toho-log-plugin.git"
   },
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/zy410419243/toho-log-plugin/issues"
+    "url": "https://github.com/orzyyyy/toho-log-plugin/issues"
   },
-  "homepage": "https://github.com/zy410419243/toho-log-plugin#readme",
+  "homepage": "https://github.com/orzyyyy/toho-log-plugin#readme",
   "devDependencies": {
-    "babel-eslint": "^10.0.1",
+    "babel-eslint": "^10.0.3",
     "chalk": "^2.4.2",
-    "eslint": "^6.0.0",
+    "eslint": "^6.6.0",
     "pre-commit": "^1.2.2"
-  },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
-    }
   },
   "pre-commit": [
     "lint"

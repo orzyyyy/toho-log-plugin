@@ -1,5 +1,3 @@
-[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
-
 English | [简体中文](./README-zh_CN.md)
 
 # Feature
@@ -8,11 +6,11 @@ English | [简体中文](./README-zh_CN.md)
 
 - When you are waitting for compiling, you can remember one or two word. Power of accumulation is huge.
 
-- The word list is about front. When I read some English artice or documents, I will record words that I don't know. You can also record your learning language word by your self.
+- The word list is related to front end. When I read some English artice or document, I will record words that I don't know. You can also record your learning language word by your self.
 
 # Usage
 
-- First, add `git+https://github.com/zy410419243/toho-log-plugin.git` into your `package.json`, maybe into dependencies, and install it.
+- First, add `git+https://github.com/orzyyyy/toho-log-plugin.git` into your `package.json`, maybe into dependencies, and install it.
 
 - Then, use it as a webpack-plugin in your `webpack.config.js` as below,
 
@@ -29,15 +27,15 @@ English | [简体中文](./README-zh_CN.md)
 
 - If you use it in `webpack-dev-server`, you may need to set `noInfo: false`, or the output will console default compile info.
 
-![img](./demo.gif)
+![img](./docs/demo.gif)
 
 # API
 
-| name         | description                                                                                       | type    | default |
-| ------------ | ------------------------------------------------------------------------------------------------- | ------- | ------- |
-| dev          | to distinguish whether the environment is development, it effects the output of your terninel.    | Boolean | true    |
-| path         | if you want to custom your own word file, you can use this as `__dirname + your file path`        | string  | -       |
-| defaultWords | there is a word list file in the plugin, about front, if you need this you can set this to `true` | Boolean | false   |
-| isPray       | if you are using `webpackbar`, you may need this to prevent info from `watchRun` or `run`         | Boolean | true    |
+| name         | description                                                                                                      | type    | default |
+| ------------ | ---------------------------------------------------------------------------------------------------------------- | ------- | ------- |
+| dev          | to distinguish whether the environment is development, it effects the output of your terninel.                   | Boolean | true    |
+| path         | if you want to custom your own word file, you can use this as { path: \_\_dirname + '/word/2017CET6-test.json' } | string  | -       |
+| defaultWords | there is a word list file in the plugin, about front, if you need this you can set this to `true`                | Boolean | false   |
+| isPray       | if you are using `webpackbar`, you may need this to prevent info from `watchRun` or `run`                        | Boolean | true    |
 
 The gif contains all usages of this plugin, have fun.
