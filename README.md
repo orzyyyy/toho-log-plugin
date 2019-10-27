@@ -27,7 +27,7 @@ English | [简体中文](./README-zh_CN.md)
 
 - If you use it in `webpack-dev-server`, you may need to set `noInfo: false`, or the output will console default compile info.
 
-![img](./docs/screenshot.gif)
+![img](screenshot.gif)
 
 # API
 

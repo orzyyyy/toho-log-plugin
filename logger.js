@@ -1,19 +1,10 @@
-/*
- * @Author: zy9@github.com/orzyyyy
- * @Date: 2018-06-18 13:43:52
- * @Last Modified by: zy9
- * @Last Modified time: 2018-11-12 08:25:30
- */
 const chalk = require('chalk');
 
 const log = (text, callbackData) => {
   if (callbackData && callbackData.length != 0) {
     const random = ~~(Math.random() * callbackData.length);
     const item = callbackData[random];
-
-    console.log(
-      chalk.greenBright(`${text}   =>   ${item.word}  ${item.mean} `),
-    );
+    console.log(chalk.greenBright(`${text}   =>   ${item.word}  ${item.mean} `));
   } else {
     console.log(chalk.greenBright(text));
   }
@@ -73,9 +64,7 @@ const logInfo = (err, stats, dev, callbackData) => {
 const logForProd = () => {
   log('\n  少女抬首，风车空转。影动风移，浮沉氤氲。若一去不回，便一去不回罢\n');
 
-  log(
-    '  铁血的热血的冷血的可笑的可悲的可爱的可敬的少女死去了，但好像又活了过来\n',
-  );
+  log('  铁血的热血的冷血的可笑的可悲的可爱的可敬的少女死去了，但好像又活了过来\n');
 
   info('  然后少女去寻找自己的诗和苟且了 ╮(╯_╰)╭\n');
 };

@@ -1,4 +1,4 @@
-const { log, error, warn, info, logInfo } = require('./log');
+const { error, info, logInfo } = require('./logger');
 let words = [];
 
 class TohoLogPlugin {
