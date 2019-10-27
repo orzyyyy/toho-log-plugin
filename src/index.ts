@@ -9,7 +9,7 @@ export default class TohoLogPlugin {
     options = Object.assign({}, { dev: true, defaultWords: false, isPray: true }, options);
 
     if (options.path === undefined && options.defaultWords) {
-      options.path = './word.json';
+      options.path = '../word.json';
     }
 
     this.options = options;
