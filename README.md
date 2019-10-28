@@ -1,5 +1,7 @@
 English | [简体中文](./README-zh_CN.md)
 
+[![codecov](https://codecov.io/gh/orzyyyy/toho-log-plugin/branch/master/graph/badge.svg)](https://codecov.io/gh/orzyyyy/toho-log-plugin)
+
 # Feature
 
 - Improve output of your terninel, if you think those info is not very important too.

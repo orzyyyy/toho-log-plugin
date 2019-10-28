@@ -1,5 +1,7 @@
 [English](./README.md) | 简体中文
 
+[![codecov](https://codecov.io/gh/orzyyyy/toho-log-plugin/branch/master/graph/badge.svg)](https://codecov.io/gh/orzyyyy/toho-log-plugin)
+
 # Feature
 
 - 改善控制台输出情况，其实就是萌化，如果你也觉得输出信息不是很重要的话
