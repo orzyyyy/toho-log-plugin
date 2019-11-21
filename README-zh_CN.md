@@ -12,7 +12,7 @@
 
 # Usage
 
-- 首先, 把 `git+https://github.com/orzyyyy/toho-log-plugin.git` 加到你的`package.json`，然后装上
+- 首先, 把 `git+https://github.com/peko-bot/toho-log-plugin.git` 加到你的`package.json`，然后装上
 
 - 然后，这是一个 webpack 的插件，所以你需要在`webpack.config.js`里配置它，就像下面写的，
 
