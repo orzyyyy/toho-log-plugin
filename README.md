@@ -12,7 +12,7 @@ English | [简体中文](./README-zh_CN.md)
 
 # Usage
 
-- First, add `git+https://github.com/peko-bot/toho-log-plugin.git` into your `package.json`, maybe into dependencies, and install it.
+- First, add `git+https://github.com/orzyyyy/toho-log-plugin.git` into your `package.json`, maybe into dependencies, and install it.
 
 - Then, use it as a webpack-plugin in your `webpack.config.js` as below,
 

@@ -2,13 +2,13 @@
   "name": "toho-log-plugin",
   "version": "1.1.0",
   "description": "A plugin of webpack, interested the output of the terninel, just for fun.",
-  "homepage": "https://github.com/peko-bot/toho-log-plugin#readme",
+  "homepage": "https://github.com/orzyyyy/toho-log-plugin#readme",
   "bugs": {
-    "url": "https://github.com/peko-bot/toho-log-plugin/issues"
+    "url": "https://github.com/orzyyyy/toho-log-plugin/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/peko-bot/toho-log-plugin.git"
+    "url": "git+https://github.com/orzyyyy/toho-log-plugin.git"
   },
   "license": "MIT",
   "author": "",
