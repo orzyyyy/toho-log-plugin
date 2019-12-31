@@ -24,10 +24,6 @@ module.exports = {
 };
 ```
 
-- 最后, 跑起来然后按保存的时候，你可以看到如下图所示的画面，
-
-![img](screenshot.gif)
-
 - 如果你用的是 webpack-dev-server, 你得设置下 `noInfo: false`, 不然你的控制台仍会输出默认编译信息
 
 # API

@@ -24,11 +24,7 @@ module.exports = {
 };
 ```
 
-- Finally, when you run your webpack and save your code, you can get output of your terninel like this,
-
 - If you use it in `webpack-dev-server`, you may need to set `noInfo: false`, or the output will console default compile info.
-
-![img](screenshot.gif)
 
 # API
 
