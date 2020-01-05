@@ -1,5 +1,4 @@
-English | [简体中文](./README-zh_CN.md)
-
+<a href="https://github.com/orzyyyy/toho-log-plugin/actions"><img alt="GitHub Actions status" src="https://github.com/orzyyyy/toho-log-plugin/workflows/test/badge.svg"></a>
 [![codecov](https://codecov.io/gh/orzyyyy/toho-log-plugin/branch/master/graph/badge.svg)](https://codecov.io/gh/orzyyyy/toho-log-plugin)
 
 # Feature
@@ -10,11 +9,13 @@ English | [简体中文](./README-zh_CN.md)
 
 - The word list is related to front end. When I read some English artice or document, I will record words that I don't know. You can also record your learning language word by your self.
 
+# Install
+
+```bash
+npm install toho-log-plugin
+```
+
 # Usage
-
-- First, add `git+https://github.com/orzyyyy/toho-log-plugin.git` into your `package.json`, maybe into dependencies, and install it.
-
-- Then, use it as a webpack-plugin in your `webpack.config.js` as below,
 
 ```javascript
 import TohoLogPlugin from 'toho-log-plugin';
@@ -24,7 +25,7 @@ module.exports = {
 };
 ```
 
-- If you use it in `webpack-dev-server`, you may need to set `noInfo: false`, or the output will console default compile info.
+- If you use `webpack-dev-server`, you may need to set `noInfo: false`, or the output will console default compile info.
 
 # API
 
@@ -34,5 +35,3 @@ module.exports = {
 | path         | if you want to custom your own word file, you can use this as { path: \_\_dirname + '/word/2017CET6-test.json' } | string  | -       |
 | defaultWords | there is a word list file in the plugin, about front, if you need this you can set this to `true`                | Boolean | false   |
 | isPray       | if you are using `webpackbar`, you may need this to prevent info from `watchRun` or `run`                        | Boolean | true    |
-
-The gif contains all usages of this plugin, have fun.
