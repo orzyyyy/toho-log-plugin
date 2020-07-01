@@ -30,7 +30,7 @@
     "lint"
   ],
   "devDependencies": {
-    "@types/jest": "^25.0.0",
+    "@types/jest": "^26.0.0",
     "@typescript-eslint/parser": "^3.0.0",
     "nino-cli": "^1.3.3",
     "react": "^16.11.0",
