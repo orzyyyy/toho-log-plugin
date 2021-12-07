@@ -1,0 +1,132 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`logger logInfo with stats warning 1`] = `
+[MockFunction] {
+  "calls": Array [
+    Array [
+      "[92mtest   =>   word  mean [39m",
+    ],
+    Array [
+      "[92mtest[39m",
+    ],
+    Array [
+      "[31mtest[39m",
+    ],
+    Array [
+      "[93mtest[39m",
+    ],
+    Array [
+      "[96mtest[39m",
+    ],
+    Array [
+      "[31mstack[39m",
+    ],
+    Array [
+      "[31mdetails[39m",
+    ],
+    Array [
+      "[31merror1[39m",
+    ],
+    Array [
+      "[31merror2[39m",
+    ],
+    Array [
+      "[31m[39m
+[31m  少女以为能神穿，奈何缠在腰间的香火钱太多，戳之，卒 (°□°；) [39m
+[31m[39m",
+    ],
+    Array [
+      "[93m1. undefined [39m
+[93m[39m",
+    ],
+    Array [
+      "[93m2. undefined [39m
+[93m[39m",
+    ],
+    Array [
+      "[93m[39m
+[93m  虽然有些烦恼，但少女还是去和风车战斗了[39m
+[93m[39m",
+    ],
+    Array [
+      "[92m[39m
+[92m  少女抬首，风车空转。影动风移，浮沉氤氲。若一去不回，便一去不回罢[39m
+[92m[39m",
+    ],
+    Array [
+      "[92m  铁血的热血的冷血的可笑的可悲的可爱的可敬的少女死去了，但好像又活了过来[39m
+[92m[39m",
+    ],
+    Array [
+      "[96m  然后少女去寻找自己的诗和苟且了 ╮(╯_╰)╭[39m
+[96m[39m",
+    ],
+  ],
+  "results": Array [
+    Object {
+      "type": "return",
+      "value": undefined,
+    },
+    Object {
+      "type": "return",
+      "value": undefined,
+    },
+    Object {
+      "type": "return",
+      "value": undefined,
+    },
+    Object {
+      "type": "return",
+      "value": undefined,
+    },
+    Object {
+      "type": "return",
+      "value": undefined,
+    },
+    Object {
+      "type": "return",
+      "value": undefined,
+    },
+    Object {
+      "type": "return",
+      "value": undefined,
+    },
+    Object {
+      "type": "return",
+      "value": undefined,
+    },
+    Object {
+      "type": "return",
+      "value": undefined,
+    },
+    Object {
+      "type": "return",
+      "value": undefined,
+    },
+    Object {
+      "type": "return",
+      "value": undefined,
+    },
+    Object {
+      "type": "return",
+      "value": undefined,
+    },
+    Object {
+      "type": "return",
+      "value": undefined,
+    },
+    Object {
+      "type": "return",
+      "value": undefined,
+    },
+    Object {
+      "type": "return",
+      "value": undefined,
+    },
+    Object {
+      "type": "return",
+      "value": undefined,
+    },
+  ],
+}
+`;
